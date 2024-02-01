@@ -9,7 +9,7 @@ colorama==0.4.6
 cryptography==42.0.2
 defusedxml==0.8.0rc2
 dj-database-url==2.1.0
-Django==5.0.1
+Django==4.2.9
 django-cors-headers==4.3.1
 django-templated-mail==1.1.1
 djangorestframework==3.14.0
