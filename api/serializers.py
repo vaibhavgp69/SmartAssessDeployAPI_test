@@ -6,8 +6,8 @@ import openai
 import requests
 import string
 import dj_database_url
-openai.organization = dj_database_url.parse(os.environ.get("ORG_KEY"))                    
-openai.api_key = dj_database_url.parse(os.environ.get("OPENAI_KEY"))
+openai.organization = os.environ.get("ORG_KEY")
+openai.api_key =os.environ.get("OPENAI_KEY")
 
 import json
 import ast
