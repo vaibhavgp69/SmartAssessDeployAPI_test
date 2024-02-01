@@ -5,9 +5,9 @@ import os
 import openai
 import requests
 import string
-openai.organization = "org-cRn4NpYi0Ew4VA8lvOsfRIBN"                     
-
-openai.api_key = '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'
+import dj_database_url
+openai.organization = dj_database_url.parse(os.environ.get("ORG_KEY"))                    
+openai.api_key = dj_database_url.parse(os.environ.get("OPENAI_KEY"))
 
 import json
 import ast
